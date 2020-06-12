@@ -5,7 +5,7 @@ const pageCountDisplay = $('.page-count')
 const previousButton = $('.turn-page.previous')
 const nextButton = $('.turn-page.next')
 const minWidth = 1440
-const sizePercent = 0.8
+const sizePercent = 0.7
 let config = {
   acceleration: true,
   width: window.innerWidth * sizePercent,
@@ -51,32 +51,4 @@ $('.turn-page.next').click(() => {
 })
 $('.turn-page.previous').click(() => {
   flipbook.turn('previous')
-})
-
-// language
-const languageBox = $('.language')
-const localStorageKey = 'language'
-const defaultLanguage = 'english'
-let activeLanguage = localStorage.getItem(localStorageKey)
-const supportedLanguages = {
-  english: '🇺🇸',
-  spanish: '🇪🇸',
-  german: '🇩🇪',
-}
-if (!supportedLanguages[activeLanguage]) {
-  activeLanguage = defaultLanguage
-  localStorage.setItem(localStorageKey, activeLanguage)
-}
-Object.keys(supportedLanguages).forEach((language) => {
-  languageBox.append(
-    `<button id="${language}" class="pure-button flag">${supportedLanguages[language]}</button>`
-  )
-})
-const languageButtons = $('.language button')
-$(`#${activeLanguage}`).addClass('active')
-languageButtons.click((event) => {
-  $('.language button').removeClass('active')
-  $(event.target).addClass('active')
-  const selectedLanguage = event.target.id
-  localStorage.setItem(localStorageKey, selectedLanguage)
 })

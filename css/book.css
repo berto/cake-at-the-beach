@@ -12,7 +12,6 @@ body {
   color: #666;
   width: 100vw;
   height: 100vh;
-  min-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,8 +22,9 @@ body {
 }
 
 .book {
-  height: 80%;
-  width: 80%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -54,6 +54,7 @@ button.turn-page {
 .language {
   padding-top: 30px;
   font-size: 30px;
+  user-select: none;
 }
 
 .language:hover {

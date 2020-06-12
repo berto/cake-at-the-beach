@@ -4,18 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake at the Beach</title>
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./css/pure.min.css" />
     <link rel="stylesheet" href="./css/book.css" />
   </head>
   <body>
-    <div id="flipbook">
-      <div class="hard">Turn.js</div>
-      <div>Page 1</div>
-      <div>Page 2</div>
-      <div>Page 3</div>
-      <div>Page 4</div>
-      <div class="hard"></div>
+    <div class="control">
+      <button class="turn-page previous pure-button"><</button>
+      <div class="page-count">Page 0 of 0</div>
+      <button class="turn-page next pure-button">></button>
     </div>
-    <button>click</button>
+    <div class="book pure-u-7-8">
+      <div id="flipbook">
+        <div class="hard">Cake at the Beach</div>
+        <div class="hard backside"></div>
+        <div>Page 1</div>
+        <div>Page 2</div>
+        <div>Page 3</div>
+        <div>Page 4</div>
+        <div class="hard backside"></div>
+        <div class="hard backside"></div>
+      </div>
+    </div>
+    <div class="language"></div>
+    <!-- <button>click</button> -->
   </body>
   <script src="./js/jquery.min.1.7.js"></script>
   <script src="./js/turn.js"></script>

@@ -5,6 +5,7 @@
 
 html {
   background: rgb(157, 155, 208);
+  user-select: none;
 }
 
 body {
@@ -83,7 +84,6 @@ button.turn-page {
 
 #flipbook .page {
   background-color: white;
-  line-height: 300px;
   font-size: 20px;
   text-align: center;
   border-radius: 5px;
@@ -117,4 +117,36 @@ button.turn-page {
   );
   background-image: linear-gradient(right, #fff 95%, #c4c4c4 100%);
   box-shadow: inset 0 0 5px #666;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+
+.cover .content {
+  height: 100%;
+}
+
+.cover .content .title {
+  font-size: 30px;
+}
+
+.cover .content img {
+  width: 90%;
+}
+
+.page-content .content .title {
+  height: 10%;
+}
+
+.page-content .content img {
+  width: 90%;
+}
+
+#flipbook .page.beach {
+  background: #fff3ed !important;
 }

@@ -14,19 +14,19 @@ const supportedLanguages = {
     icon: 'united_states',
     cover: 'Cake at the Beach',
     control: ['Page', 'of'],
-    pages: ['Page 1', 'Page 2', 'Page 3', 'Page 4'],
+    pages: ['Page 1', 'Page 2', 'Page 3', 'cake at the beach'],
   },
   spanish: {
     icon: 'spain',
     cover: 'Pastel en la Playa',
     control: ['Página', 'de'],
-    pages: ['Página 1', 'Página 2', 'Página 3', 'Página 4'],
+    pages: ['Página 1', 'Página 2', 'Página 3', 'pastel en la playa'],
   },
   german: {
     icon: 'germany',
     cover: 'Kuchen am Strand',
     control: ['Seite', 'von'],
-    pages: ['Seite 1', 'Seite 2', 'Seite 3', 'Seite 4'],
+    pages: ['Seite 1', 'Seite 2', 'Seite 3', 'Kuchen am Strand'],
   },
 }
 
@@ -102,11 +102,11 @@ $('.turn-page.previous').click(() => {
 })
 
 const updateCover = (cover) => {
-  $('.cover').html(cover)
+  $('.cover .content .title').html(cover)
 }
 
 const updatePages = (pages) => {
-  $('.page-content').each(function (index) {
+  $('.page-content .title').each(function (index) {
     $(this).html(pages[index])
   })
 }

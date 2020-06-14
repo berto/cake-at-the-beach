@@ -39,11 +39,15 @@ let config = {
 }
 
 const resize = () => {
-  flipbook.turn('size', window.innerWidth * sizePercent, window.innerHeight * sizePercent)
+  let width = window.innerWidth * sizePercent
+  let height = window.innerHeight * sizePercent
   let display = 'double'
   if (window.innerWidth < minWidth) {
+    width = window.innerWidth * 0.9
+    height = window.innerHeight * 0.8
     display = 'single'
   }
+  flipbook.turn('size', width, height)
   flipbook.turn('display', display)
 }
 
@@ -91,6 +95,9 @@ const setPageNumber = (page, control) => {
 
 setPageNumber(1, supportedLanguages[activeLanguage].control)
 flipbook.bind('turning', function (event, page, pageObject) {
+  if (page === 1) {
+    updateCover(getInfo().cover)
+  }
   setPageNumber(page, getInfo().control)
 })
 

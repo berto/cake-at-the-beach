@@ -20,13 +20,22 @@ body {
   background: rgb(157, 155, 208);
   background: linear-gradient(90deg, rgba(157, 155, 208, 1) 0%, rgba(124, 166, 228, 1) 100%);
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 .book {
-  width: 90%;
+  width: 90vh;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .book {
+    width: 100vh;
+    max-width: 50vh;
+  }
 }
 
 button.turn-page {
@@ -38,9 +47,11 @@ button.turn-page {
 .language {
   display: flex;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .control {
+  padding-top: 20px;
   padding-bottom: 30px;
   user-select: none;
 }

@@ -61,18 +61,19 @@ button.turn-page {
   cursor: pointer;
 }
 
-.language button {
-  padding: 1px 6px !important;
-  border: 1px solid gray;
+.language img {
+  padding: 0 5px !important;
+  border: 1px solid transparent;
   border-radius: 30px !important;
+  width: 40px;
 }
 
-.language button.active {
+.language img.active {
   border: 1px solid lightseagreen;
   background-color: #b8e0dd;
 }
 
-.language button:not(:last-child) {
+.language img:not(:last-child) {
   margin-right: 30px;
 }
 

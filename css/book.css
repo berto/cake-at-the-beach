@@ -135,7 +135,7 @@ button.turn-page {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90%;
+  height: 100%;
 }
 
 .cover .content {
@@ -159,5 +159,15 @@ button.turn-page {
 }
 
 #flipbook .page.beach {
-  background: #fff3ed !important;
+  background: #fff8ee !important;
+}
+#flipbook .page.cake {
+  background: #f5fff4 !important;
+}
+#flipbook .page.park {
+  background: #edfeff !important;
+}
+#flipbook .page.mountain {
+  background: #9b9b9b !important;
+  color: #fff !important;
 }

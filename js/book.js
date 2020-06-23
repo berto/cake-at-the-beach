@@ -14,19 +14,34 @@ const supportedLanguages = {
     icon: 'united_states',
     cover: 'Cake at the Beach',
     control: ['Page', 'of'],
-    pages: ['Page 1', 'Page 2', 'Page 3', 'cake at the beach'],
+    pages: [
+      'I made a cake',
+      'I like to eat cake at the park',
+      'cake on the top of a mountain',
+      'cake at the beach',
+    ],
   },
   spanish: {
     icon: 'spain',
     cover: 'Pastel en la Playa',
     control: ['Página', 'de'],
-    pages: ['Página 1', 'Página 2', 'Página 3', 'pastel en la playa'],
+    pages: [
+      'hice un pastel',
+      'me gusta comer pastel en el parque',
+      'pastel en la cima de una montaña',
+      'pastel en la playa',
+    ],
   },
   german: {
     icon: 'germany',
     cover: 'Kuchen am Strand',
     control: ['Seite', 'von'],
-    pages: ['Seite 1', 'Seite 2', 'Seite 3', 'Kuchen am Strand'],
+    pages: [
+      'Ich habe einen Kuchen gebacken',
+      'Ich esse gerne Kuchen im Park',
+      'Kuchen auf der Spitze eines Berges',
+      'Kuchen am Strand',
+    ],
   },
 }
 
